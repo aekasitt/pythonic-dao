@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pythonic-dao"
+version = "0.1.0"
+description = ""
+authors = ["Aekasitt Guruvanich <aekazitt@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+eth-brownie = "^1.16.4"
+bip-utils = "^1.11.1"
+fastapi = {version = "^0.68.1", extras = ["dapp"]}
+Jinja2 = {version = "^3.0.1", extras = ["dapp"]}
+uvicorn = {version = "^0.15.0", extras = ["dapp"]}
+aiofiles = {version = "^0.7.0", extras = ["dapp"]}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[tool.pytest.ini_options]
+addopts = "-s -tb=short"
+test_paths = [ "tests" ]
+python_files = [ "*.py" ]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

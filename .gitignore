@@ -1,0 +1,13 @@
+__pycache__
+.env
+.history
+.hypothesis/
+build/
+reports/
+
+# ignore workspace settings
+.vscode
+.idea
+
+# ignore yaml files unless specified otherwise
+**/*.yml
